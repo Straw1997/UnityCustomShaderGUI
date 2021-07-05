@@ -1,4 +1,4 @@
-# UnityCustomShaderGUI
+# Unity Custom Shader GUI
 自定义Unity Shader GUI，你可以使用他轻松的组织你的shader属性。他非常的方便，并且兼容Unity内置的属性样式例如[Header()]、[Space]、[Toggle]、[Enum]等
 ![alt CustomShaderGUI](https://github.com/Straw1997/UnityCustomShaderGUI/blob/main/CustomShaderGUI.jpg)
 ## 功能
