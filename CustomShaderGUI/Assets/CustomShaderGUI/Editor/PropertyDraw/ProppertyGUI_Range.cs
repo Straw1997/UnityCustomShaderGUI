@@ -95,8 +95,12 @@ namespace Scarecrow
 
 
             EditorGUI.MinMaxSlider(rangeRect, label, ref value.x, ref value.y, value.z, value.w);
+            //绘制后面字符框，还原缩进等级
+            int indentLevel = EditorGUI.indentLevel;
+            EditorGUI.indentLevel = 0;
             value.x = EditorGUI.FloatField(minRect, value.x);
             value.y = EditorGUI.FloatField(maxRect,value.y);
+            EditorGUI.indentLevel = indentLevel;
 
             EditorGUI.showMixedValue = false;
             if (EditorGUI.EndChangeCheck())
