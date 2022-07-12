@@ -63,7 +63,7 @@ namespace Scarecrow
                 //如果折叠页为展开状态，或该属性是折叠页则进行属性绘制
                 if (_foldoutOpen || IsFoldout(properties[i]))
                 {
-                    if (properties[i].flags != MaterialProperty.PropFlags.HideInInspector)
+                    if ((properties[i].flags & MaterialProperty.PropFlags.HideInInspector) != MaterialProperty.PropFlags.HideInInspector)
                         materialEditor.ShaderProperty(properties[i], properties[i].displayName);
                 }
 
